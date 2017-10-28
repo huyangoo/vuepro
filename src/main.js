@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+/* eslint-disable no-undef */
+Vue.prototype.$layui = layui
 
 /* eslint-disable no-new */
 new Vue({
