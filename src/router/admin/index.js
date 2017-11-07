@@ -1,15 +1,16 @@
-import Premises from './premises'
+import person from './person'
 
 export default {
   name: 'admin',
-  path: '/',
-  redirect: '/welcome',
+  path: '',
   component: () => import('@/page/admin/home'),
   children: [
+    ...person,
     {
-      path: 'welcome',
-      component: () => import('@/page/admin/welcome')
-    },
-    ...Premises
+      name: 'edit',
+      path: '/edit/:id',
+      props: true,
+      component: () => import('@/page/admin/person/edit')
+    }
   ]
 }

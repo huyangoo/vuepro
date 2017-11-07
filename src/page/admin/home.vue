@@ -37,9 +37,9 @@
           <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
           <ul class="layui-nav layui-nav-tree" lay-filter="test">
             <li class="layui-nav-item layui-nav-itemed">
-              <a class="" href="javascript:;">楼盘管理</a>
+              <a class="" href="javascript:;">人员管理</a>
               <dl class="layui-nav-child">
-                <dd><router-link to="/premises/table">楼盘列表</router-link></dd>
+                <dd><router-link to="/person/table">人员列表</router-link></dd>
               </dl>
             </li>
             <li class="layui-nav-item">
@@ -74,10 +74,6 @@
       }
     },
     created () {
-      this.$layui.use('element', function (ele) {
-        let _ele = ele
-        _ele.toString()
-      })
     }
   }
 </script>
