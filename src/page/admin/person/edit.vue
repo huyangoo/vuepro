@@ -8,16 +8,18 @@
       </div>
     </div>
     <div class="layui-form-item">
-      <label class="layui-form-label">性别</label>
-      <div class="layui-input-block">
-        <input type="radio" name="sex" value="0" title="男" :checked="person.sex == 0">
-        <input type="radio" name="sex" value="1" title="女" :checked="person.sex == 1">
+      <div class="layui-inline">
+        <label class="layui-form-label">性别</label>
+        <div class="layui-input-inline">
+          <input type="radio" name="sex" value="0" title="男" :checked="person.sex == 0">
+          <input type="radio" name="sex" value="1" title="女" :checked="person.sex == 1">
+        </div>
       </div>
-    </div>
-    <div class="layui-form-item">
-      <label class="layui-form-label">年龄</label>
-      <div class="layui-input-block">
-        <input name="age" :value="person.age" type="number" class="layui-input" placeholder="请输入年龄">
+      <div class="layui-inline">
+        <label class="layui-form-label">年龄</label>
+        <div class="layui-input-inline" style="width: 100px;">
+          <input name="age" :value="person.age" type="number" class="layui-input" placeholder="请输入年龄">
+        </div>
       </div>
     </div>
     <div class="layui-form-item">

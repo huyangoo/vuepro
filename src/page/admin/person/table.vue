@@ -27,7 +27,6 @@
         <td>{{item.phone}}</td>
         <td>{{item.birthday}}</td>
         <td>{{item.address}}</td>
-        <td><button class="layui-btn layui-btn-small" lay-event="edit"><i class="layui-icon"></i></button></td>
       </tr>
       </tbody>
     </table>
